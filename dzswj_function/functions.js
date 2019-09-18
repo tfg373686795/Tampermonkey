@@ -1,5 +1,3 @@
-alert("初始化加载");
-
 var addStyle = function(cssText) {
 	var head = document.querySelector('head');
 	var style = document.createElement('style');
