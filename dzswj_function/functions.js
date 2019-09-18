@@ -13,7 +13,7 @@ var addStyleForUrl = function(cssUrl) {
     fileref.setAttribute("type","text/css");
     fileref.setAttribute("href",cssUrl);
 	head.appendChild(fileref);
-		console.log("css文本加载成功：" + cssUrl);
+	console.log("css加载成功：" + cssUrl);
 };
 var addScript = function(jsText) {
 	var head = document.querySelector('head');
@@ -29,5 +29,5 @@ var addScriptForUrl = function(jsUrl) {
 	script.type="text/javascript";
 	script.src=jsUrl;
 	head.appendChild(script);
-			console.log("js加载成功：" + jsUrl);
+	console.log("js加载成功：" + jsUrl);
 };
