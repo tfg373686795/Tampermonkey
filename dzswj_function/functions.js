@@ -7,6 +7,13 @@ var addStyle = function(cssText) {
 	style.textContent = cssText;
 	head.appendChild(style);
 };
+var addStyleForUrl = function(cssUrl) {
+	var head = document.querySelector('head');
+	var style = document.createElement('style');
+	style.setAttribute('type', 'text/css');
+	style.href=cssUrl;
+	head.appendChild(style);
+};
 var addScript = function(jsText) {
 	var head = document.querySelector('head');
 	var script = document.createElement('script');
